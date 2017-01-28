@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Church</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript: void(0)" class="closebtn" onclick = "closeNav()">&times;</a> 
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    
+    <!-- User any element to open the sidenav-->
+      
+      <div class="row">
+          <span class="col-sm-2 offset-sm-1" onclick="openNav()"><%= image_tag "cross.png", class: "hamburger" %></span>
+        
+        <div class="col-sm-9">
+          <h1>
+            The Church of JONIA
+          </h1>
+        </div>
+      </div>
+     
+    
+
+    
+    <%= yield %>
+    
+
+    <script>
+      /* set the width of the navigation to 250px */
+      function openNav(){
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      /* Set the width of the side navigation to 0 */
+      function closeNav(){
+        document.getElementById("mySidenav").style.width = "0"
+      }
+    </script>
+  </body>
+</html>

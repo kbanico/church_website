@@ -1,0 +1,104 @@
+@import "bootstrap";
+
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin: 0;
+}
+
+.hero{
+    background:image_url("hero.jpeg") no-repeat fixed center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 570px;
+}
+
+.center-section{
+   
+    background:image_url("worship.jpg") no-repeat fixed center center;
+    background-size:cover;
+    overflow:hidden;
+}
+
+
+
+.center-section .col-sm{
+    margin:10px;
+    margin-top:50px;
+    height:200px;
+
+}
+
+.box {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    background: rgba(74, 150, 207, 0.8);
+    text-align: center;
+    padding: 10px;
+    top: 50%;
+    color: #FFF;
+    margin-top: -56px;
+}
+
+.center-section .col-sm img{
+    margin-bottom: 30px;
+    min-width: 100%;
+    width: 100%;
+}
+
+.overlay{
+     background: rgba(0, 0, 0, 0.5);
+     height:100%;
+}
+
+/* The side navigation menu */
+.sidenav{
+    height: 100%;
+    width:0;
+    
+    position:fixed;
+    z-index: 1;
+    top:0;
+    right:0;
+    background-color: #111;
+    overflow-x:hidden;
+    padding-top: 60px;
+    
+    transition: 0.5s;
+}
+
+/* The navigation menu links */
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display:block;
+    color: #818181;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left:50px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px){
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.hamburger{
+    width:50px;
+    height: auto;
+}
