@@ -1,0 +1,10 @@
+<% @prayers.each do |prayer|%>
+    <div>
+        <h1><%= prayer.title %></h1>
+        <p>From: <%= prayer.name %></p>
+        <p>Email: <%= prayer.email %></p>
+        <p>Request-type: <%= prayer.request_type %></p>
+        <p>Prayer Description: <%= prayer.description %></p>
+        
+    </div>
+<% end %>
