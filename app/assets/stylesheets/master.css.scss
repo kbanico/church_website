@@ -13,6 +13,13 @@ h1, h2, h3, h4, h5, h6, .navbar {
     height: 570px;
 }
 
+.hero-frosty{
+    border-radius:10px;
+    background:rgba(245,155,251, 0.5);
+    color:white;
+    position:absolute;
+    bottom:20%;
+}
 .center-section{
    
     background:image_url("worship.jpg") no-repeat fixed center center;
@@ -22,7 +29,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 
 
-.center-section .col-sm{
+.center-section .col-sm, .center-section .col-12{
     margin:10px;
     margin-top:50px;
     height:200px;
@@ -41,11 +48,14 @@ h1, h2, h3, h4, h5, h6, .navbar {
     margin-top: -56px;
 }
 
-.center-section .col-sm img{
+
+.center-section .col-sm img, .center-section .col-12 img{
     margin-bottom: 30px;
     min-width: 100%;
     width: 100%;
 }
+
+
 
 .overlay{
      background: rgba(0, 0, 0, 0.5);
@@ -99,6 +109,25 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .hamburger{
-    width:50px;
+    width:35px;
     height: auto;
+}
+
+.navigation{
+    background: image_url("nav-bg");
+    color:white;
+}
+
+clear{
+    clear:both;
+}
+
+.pink-frosty{
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:-10px;
+    background:rgba(245,155,251, 0.5);
+    color:white;
 }
