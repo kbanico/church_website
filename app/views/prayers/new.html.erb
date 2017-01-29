@@ -1,4 +1,20 @@
+<div class="col-12 new-prayer">
+    
+</div>
 <div class="col-12 col-sm-10 offset-sm-1">
+    <ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="btn btn-info" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Submit Prayer Online</a>
+  </li>
+
+</ul>
+
+<br>
+<div class="col-12 col-sm-10 offset-sm-1">
+  
+    
+<div class="collapse" id="collapseExample">
+  <div class="card card-block">
     <h1>New Prayer</h1>
     <%= simple_form_for @prayer do |f| %>
         <%= f.input :name, placeholder: "Your Name" %>
@@ -8,4 +24,12 @@
         <%= f.input :description, label: false, :as => :text, :input_html => { :rows => 7 , :style => 'width: 100%'}%>
         <%= f.submit "Send Prayer", class: "btn btn-success" %>
     <% end %>
+  </div>
+</div>
+</div>
+<p>Prayer is the practice of the presence of God. It is the place where pride is abandoned, hope is lifted, and supplication is made. Prayer is the place for admitting our need, for adopting humility, and claiming dependence upon God. Prayer is the needful practice of the Christian. Prayer is the exercise of faith and hope. Prayer is the privilege of touching the heart of the Father through His Son, Jesus Christ our Lord.</p>
+
+<p><i>Draw near to God and He will draw near to you. James: 4:8</i></p>
+
+<p>Be anxious for nothing, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all comprehension, shall guard your hearts and your minds in Christ Jesus. Phil. 4:6-7</p>
 </div>
