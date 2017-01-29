@@ -5,6 +5,31 @@
         <p>Email: <%= prayer.email %></p>
         <p>Request-type: <%= prayer.request_type %></p>
         <p>Prayer Description: <%= prayer.description %></p>
+        <h1>Prayer Created at: <%= prayer.created_at.strftime("%Y-%m-%d") %></h1>
         
     </div>
 <% end %>
+
+
+<hr><hr>
+
+
+<hr><hr>
+
+
+<%= calendar do |date| %>
+    <%= date.day %>
+    <% @prayers.each do |prayer| %>
+        <% if prayer.created_at.strftime("%Y-%m-%d") == date.to_s %>
+            <ul
+                <li>
+                    <%= prayer.name %>
+                    <ul><%= prayer.title %></ul>
+                </li>
+            </ul>
+        <% else %>
+            <p>Not here <%=date %></p>
+        <% end %>
+    <% end %>
+<% end %>
+    
